@@ -1,0 +1,25 @@
+dependencies:
+  - smartcontractkit/chainlink-brownie-contracts@0.2.1
+compiler:
+  solc:
+    remappings:
+      - '@chainlink=smartcontractkit/chainlink-brownie-contracts@0.2.1'
+networks:
+  default: development
+  mainnet:
+    link_token: '0x514910771af9ca656af840dff83e8264ecf986ca'
+    oracle: '0x92c08A635C7525505123F0F8e327C6Fa66E09a18'
+  kovan:
+    vrf_coordinator: '0xdD3782915140c8f3b190B5D67eAc6dc5760C46E9'
+    link_token: '0xa36085F69e2889c224210F603D836748e7dC0088'
+    fee: 100000000000000000
+    oracle: '0xbE79B86e93d09d6dDa636352A06491EC8e7bDf12'
+    av_temp_job: 'b89c0b5730fd4862a419c4c78fb12fb2'
+    total_rain_job: 'eccbc09d52da44d5bdf8f2a944e3f0b5'
+    hail_job: 'bef10a74532b425180268b7c2c97e78b'
+    # Change to True if you have an Etherscan API key and want to verify
+wallets:
+  from_key: ${PRIVATE_KEY}
+  from_mnemonic: ${MNEMONIC}
+
+  # could also do from_mnemonic, and you'd have to change the accounts.add to accounts.from_mnemonic
