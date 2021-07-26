@@ -22,4 +22,4 @@ def main():
     tx = weather.requestTotalRain("2021-04-01", "2021-05-01", {"from": account})
     tx.wait(1)
     time.sleep(60)
-    print(f"Current hail is {weather.totalRain()}")
+    print(f"Current rain is {weather.totalRain()}")
