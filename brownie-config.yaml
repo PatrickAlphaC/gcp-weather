@@ -19,6 +19,7 @@ networks:
     total_rain_job: 'e9c41111b74f454695abd471806d9c6f'
     hail_job: '941cb4bdd6e746cd933a37c8e92f2f98'
     fee: 1000000000000000000
+    generic: '0606a7c2811e4dbab659be400ecd41f9'
   kovan:
     link_token: '0xa36085F69e2889c224210F603D836748e7dC0088'
     fee: 100000000000000000
@@ -26,8 +27,8 @@ networks:
     av_temp_job: '93b72982721945268cf3ba75894f773e'
     total_rain_job: '3c7838a5810c4aeea140134d10a6d0c3'
     hail_job: '7633f5d84840486a961ee281f96378f7'
+    generic: 'c414aab46673419697cad866b33c7921'
 wallets:
   from_key: ${PRIVATE_KEY}
   from_mnemonic: ${MNEMONIC}
-
-  # could also do from_mnemonic, and you'd have to change the accounts.add to accounts.from_mnemonic
+# could also do from_mnemonic, and you'd have to change the accounts.add to accounts.from_mnemonic

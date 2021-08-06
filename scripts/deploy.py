@@ -12,10 +12,15 @@ def main():
         get_contract("link_token").address,
         get_contract("oracle").address,
         Web3.toHex(text=config["networks"][network.show_active()]["av_temp_job"]),
-        Web3.toHex(text=config["networks"][network.show_active()]["total_rain_job"],),
-        Web3.toHex(text=config["networks"][network.show_active()]["hail_job"],),
+        Web3.toHex(
+            text=config["networks"][network.show_active()]["total_rain_job"],
+        ),
+        Web3.toHex(
+            text=config["networks"][network.show_active()]["hail_job"],
+        ),
         config["networks"][network.show_active()]["fee"],
         {"from": account},
+        publish_source=True,
     )
     fund_tx = fund_with_link(weather)
     fund_tx.wait(1)
