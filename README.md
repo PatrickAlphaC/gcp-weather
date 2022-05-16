@@ -1,3 +1,5 @@
+> Note: This repo is archived due to some nodes not being live anymore. 
+
 
 This is a repo to work with and use Chainlink smart contracts with the google weather node. If you're brand new to Chainlink, check out the beginner walkthroughs in remix to [learn the basics.](https://docs.chain.link/docs/beginners-tutorial)
 
